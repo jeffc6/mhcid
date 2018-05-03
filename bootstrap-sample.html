@@ -11,24 +11,20 @@
       .col-sm {
         background-color:#ffbfbf;
       }
-      .image-cropper {
-    max-width: 100px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-      }
-      .image-cropper img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    width: 150%; 
-    margin: 0 0 0 -20%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;  
-      }
+    .image-cropper {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .image-cropper img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
     </style>
     <title>Hello, world!</title>
   </head>
@@ -36,7 +32,7 @@
   <body>
     <div class="container">
       <div class="row justify-content-md-center image-cropper">
-          <img src="http://gothicginobili.com/wp-content/uploads/2012/12/kobe-bryant.png" alt="Smiley face" height="250" width="250">
+          <img class"rounded" src="http://gothicginobili.com/wp-content/uploads/2012/12/kobe-bryant.png" alt="Smiley face" height="250" width="250">
       </div>
       <div class="row">
         <div class="col-sm">
